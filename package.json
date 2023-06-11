@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@storybook/storybook-deployer": "^2.8.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -15,10 +16,6 @@
     "@storybook/react": "^7.0.20",
     "@storybook/react-vite": "^7.0.20",
     "@storybook/testing-library": "^0.0.14-next.2",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "storybook": "^7.0.20",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
@@ -27,12 +24,17 @@
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.20",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "deploy-storybook": "storybook-to-ghpages",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
